@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "digital-advertising-budget-optimizer"
+version = "1.0.0"
+description = "Reproducible advertising analytics, big-data benchmarks, and constrained budget recommendations"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "MIT"}
+dependencies = ["numpy>=1.26,<3", "pandas>=2.2,<3", "psutil>=5.9,<8"]
+
+[project.optional-dependencies]
+dashboard = ["streamlit>=1.40,<2", "plotly>=5.24,<7"]
+spark = ["pyspark>=3.5,<4"]
+dev = ["pytest>=8,<9", "ruff>=0.9,<1"]
+
+[project.scripts]
+ad-budget = "ad_budget.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+extend-exclude = [".tools"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I"]
