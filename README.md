@@ -1,6 +1,6 @@
 # Digital Advertising Budget Optimizer
 
-[![CI](https://img.shields.io/badge/CI-GitHub_Actions-2088FF?logo=githubactions&logoColor=white)](.github/workflows/ci.yml)
+[![CI](https://github.com/Who-Moiz/digital-advertising-budget-optimizer/actions/workflows/ci.yml/badge.svg)](https://github.com/Who-Moiz/digital-advertising-budget-optimizer/actions/workflows/ci.yml)
 [![Python](https://img.shields.io/badge/Python-3.11%20%E2%80%93%203.12-3776AB?logo=python&logoColor=white)](https://www.python.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
@@ -142,6 +142,12 @@ See [the project report](docs/project_report.md) for requirement coverage and th
 [results directory](examples/results/) for actual outputs. Benchmark files include
 machine metadata and status per run; only successful, matching outputs should be
 compared. No unexecuted scale is represented as a measured result.
+
+All three required backends were executed at **all four scales**, through
+**10 million rows**, and their platform totals matched. Local validation passed
+**29 tests**, including Spark and dashboard workflows. The measured runs are
+single-run demonstrations; see [the execution record](examples/results/README.md)
+for timings, memory and experimental limitations.
 
 ## Container
 

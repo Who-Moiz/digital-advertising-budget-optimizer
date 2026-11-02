@@ -52,6 +52,17 @@ The execution record in `examples/results/README.md` identifies the scales and
 backends actually run during preparation. The full four-scale runner is included
 for reproducing or extending the experiment on an appropriately sized machine.
 
+All four required scales were executed locally with Pandas, MapReduce and Spark.
+Each backend completed successfully, and all five platform measure totals agreed
+at every scale. The largest generated input contained 10 million rows and occupied
+932,782,706 bytes. Local validation passed 29 tests, including the actual Spark
+integration test and dashboard interactions. Lint, formatting and dependency
+consistency checks also passed.
+
+These benchmark values come from one run per backend and scale. Some runs overlapped
+with other validation work, and backend order was fixed. They verify functionality
+and illustrate local resource costs; they are not controlled performance rankings.
+
 ## Limitations and extensions
 
 The data is simulated and its platform differences are authored assumptions.

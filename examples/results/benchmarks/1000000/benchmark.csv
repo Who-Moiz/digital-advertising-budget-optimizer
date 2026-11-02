@@ -1,0 +1,4 @@
+backend,repeat,status,seconds,peak_tree_rss_mb,parity,input_bytes
+pandas,1,ok,5.101925499999879,398.12890625,True,93281094
+mapreduce,1,ok,5.193336699999918,370.2109375,True,93281094
+spark,1,ok,51.20664779999993,592.9453125,True,93281094
