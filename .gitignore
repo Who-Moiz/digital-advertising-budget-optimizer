@@ -30,3 +30,5 @@ spark-warehouse/
 metastore_db/
 derby.log
 *.log
+# Local academic submission document
+submission/

@@ -169,3 +169,7 @@ docker run --rm ad-budget python -m ad_budget analyze data/sample/campaigns.csv 
 - [Contributing](CONTRIBUTING.md) · [Security](SECURITY.md) · [Changelog](CHANGELOG.md)
 
 Released under the [MIT license](LICENSE).
+
+## Author
+
+Abdul Moiz
